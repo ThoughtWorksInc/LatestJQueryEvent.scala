@@ -1,9 +1,9 @@
 ThisBuild / organization := "com.thoughtworks.binding"
 
-name := "LatestEvent"
+name := "LatestJQueryEvent"
 
 enablePlugins(ScalaJSPlugin)
 
-libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.6"
+libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.4"
 
 libraryDependencies += "com.thoughtworks.binding" %%% "binding" % "11.7.0"
