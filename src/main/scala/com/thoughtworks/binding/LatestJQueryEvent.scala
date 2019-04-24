@@ -7,7 +7,7 @@ import scala.scalajs.js
 /**
   * @author 杨博 (Yang Bo)
   */
-class LatestJQueryEvent(eventTarget: JQuery, eventType: String) extends Binding[Option[JQueryEventObject]] {
+class LatestJQueryEvent(eventTarget: JQuery, eventType: js.Any) extends Binding[Option[JQueryEventObject]] {
   private var cache: Option[JQueryEventObject] = None
   private val publisher = new SafeBuffer[ChangedListener[Option[JQueryEventObject]]]
 
